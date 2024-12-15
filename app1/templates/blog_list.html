@@ -1,0 +1,11 @@
+<h1>My Blog List</h1>
+
+<ul>
+    {% for list in blog_list %}
+        <li>
+            <a href="http://localhost:8000/app1/posts/{{ list.id }}">
+                {{ list.title }}
+            </a>
+        </li>
+    {% endfor %}
+</ul>
